@@ -185,7 +185,7 @@
   border-radius: 50%;
 }
 .chart-empty {
-  min-height: 180px;
+  min-height: 64px;
   display: grid;
   place-items: center;
   font-size: 14px;
@@ -967,7 +967,6 @@ svg {
   border-radius: 50%;
 }
 .main-content {
-  max-width: 1450px;
   width: 100%;
   margin: 0 auto;
   padding: 43px 43px 30px;
@@ -1764,14 +1763,19 @@ tbody tr:hover {
 }
 @media (min-width: 1500px) {
   .main-content {
-    padding-top: 52px;
+    padding-top: 32px;
   }
   .page-heading {
-    margin-bottom: 43px;
+    margin-bottom: 28px;
   }
   td {
     padding-top: 23px;
     padding-bottom: 23px;
+  }
+}
+@media (min-width: 2000px) {
+  .metrics-grid {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 }
 @media (max-width: 1150px) {

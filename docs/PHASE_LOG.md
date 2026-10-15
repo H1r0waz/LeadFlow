@@ -1,5 +1,9 @@
 # Phase log
 
+## Post-deployment layout adjustment (2026-10-15)
+
+Removed the workspace's 1450px content cap to use wide screens, reduced desktop header spacing, placed dashboard metrics in eight columns above 2000px, and reduced empty-chart minimum height from 180px to 64px. Existing mobile breakpoints remain in place. Production build, Prettier and the existing Chromium responsive/keyboard/contrast/recovery journey passed. Backend behavior is unchanged.
+
 ## Phase 11 — Public deployment complete (2026-10-15)
 
 The user authorized Render Free, Neon Free, the Render workspace and secret database configuration. Added Docker packaging, same-origin SPA/API hosting, HTTPS/Secure-cookie enforcement and startup migrations. Created a separate Neon project/database and limited runtime role; local development databases remain unchanged. Frontend production build, four focused hosting tests and Ruff passed. The test caught an API fallback error caused by Windows path separators; the correction passed. Render built the container and reported it live at https://leadflow-tcdh.onrender.com. Thirty live HTTPS/API checks and Chromium login/dashboard/reload passed. No error-level Render logs were returned. Full earlier suites, load/uptime, cold-start and restore drills were not rerun/performed. Original local Git history stays private; the public source uses noreply-authored commits. See DEPLOYMENT.md for evidence and free-plan limits.
