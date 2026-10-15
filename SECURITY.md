@@ -1,6 +1,6 @@
 # Security and operating boundaries
 
-LeadFlow is a local personal demonstration using fictional data. It has no configured public deployment, external integration or paid resource. This document records implemented controls and limits; it is not an independent security certification.
+LeadFlow is a personal portfolio demonstration using fictional data. The user authorized deployment to Render Free and an isolated Neon Free PostgreSQL database. See docs/DEPLOYMENT.md for current live verification. This document records implemented controls and limits; it is not an independent security certification.
 
 ## Authentication and access
 
@@ -30,6 +30,6 @@ The latest pip-audit/npm audit runs reported no known vulnerabilities across the
 
 The isolated PostgreSQL cluster on 127.0.0.1:55433 trusts loopback clients and has a broad local administrator role. Any local process can access it. Do not expose it or use real data. Current HTTP cookies are not Secure; real TLS behavior is untested. Rate limits reset on restart and are not shared across workers.
 
-Before public use: configure production hosting/TLS, least-privilege database credentials, backups/recovery, shared throttling and operational monitoring. Also assess concurrent load, large exports and broader browser/assistive-technology behavior. Password recovery, email verification, reminders and team accounts are not delivered.
+The hosted entry point forces HTTPS-origin configuration and Secure cookies. Its database runtime role has no superuser, role-creation or database-creation privileges. A separate owner connection runs Alembic at startup; database credentials are runtime secrets, never build arguments in the Dockerfile. A single worker keeps process-local throttling consistent within that instance; counters reset on restart. This is a public fictional-data demo, not a production CRM for real contacts. Shared throttling, independent backup/restore drills, load testing and operational alerting remain future work. Password recovery, email verification, reminders and team accounts are not delivered.
 
 Publishing, production deployment, paid resources or introducing credentials require explicit user authorization. Report suspected vulnerabilities privately to the owner without credentials or personal records.

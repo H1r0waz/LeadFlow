@@ -1,5 +1,9 @@
 # Release report
 
+## Phase 11 — Public deployment in progress
+
+User-authorized Render Free + Neon Free deployment adds a Docker build, same-origin SPA/API hosting, HTTPS/Secure-cookie enforcement and startup Alembic migrations with a separate limited runtime database role. The isolated Neon schema is migrated. The focused PostgreSQL hosting test and frontend production build passed; Ruff passed. An initial Windows path-separator regression in API fallback was caught by the new test and corrected. Container build and live authenticated verification are pending. See docs/DEPLOYMENT.md.
+
 ## Final local MVP — Phase 10
 
 All roadmap phases and local definition-of-done checks are complete. LeadFlow is a personal portfolio demonstration, not commissioned client work. The delivered scope includes registration/session authentication, user-isolated leads, searchable/filterable/sortable tables, persisted six-stage Kanban with real native drag and keyboard selectors, notes, dated tasks, history, PostgreSQL metrics/charts, CSV preview/import/export, profile settings and an opt-in fictional seed.

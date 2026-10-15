@@ -1,6 +1,6 @@
 # Architecture
 
-LeadFlow is a React SPA, a FastAPI API and PostgreSQL in one repository. No queue, cache server, external API or generic repository framework is required. It runs locally; a future host should serve SPA route fallback and proxy /api under one origin. Production hosting is not configured.
+LeadFlow is a React SPA, a FastAPI API and PostgreSQL in one repository. No queue, cache server, external API or generic repository framework is required. The hosted Docker entry point serves the built SPA and API from one HTTPS origin on Render, backed by an isolated Neon PostgreSQL database. SPA navigation falls back to index.html; unknown API routes and missing assets retain 404 responses. Local Vite development is unchanged. See docs/DEPLOYMENT.md for deployment evidence and limits.
 
 ## Frontend
 

@@ -45,7 +45,7 @@ The database helper initializes only ignored .local/postgres at 127.0.0.1:55433,
 
 API: http://127.0.0.1:8000, OpenAPI /docs, liveness /health, database readiness /api/v1/health. Vite proxies /api while preserving Origin. Tests intentionally reset only the exact guarded loopback leadflow_test database.
 
-No public hosting, paid resource or external service is configured. Local HTTP cookies are not Secure; public use needs separate production infrastructure and operational work. See [SECURITY.md](SECURITY.md).
+Public demo deployment is being prepared on Render Free with a separate Neon Free PostgreSQL database. See [deployment instructions and live evidence](docs/DEPLOYMENT.md). Local HTTP cookies remain development-only; the hosted entry point requires HTTPS and Secure cookies. See [SECURITY.md](SECURITY.md).
 
 ## Product behavior
 

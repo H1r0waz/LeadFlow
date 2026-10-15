@@ -1,5 +1,9 @@
 # Phase log
 
+## Phase 11 — Public deployment (in progress, 2026-10-15)
+
+The user authorized Render Free, Neon Free, the Render workspace and secret database configuration. Added Docker packaging, same-origin SPA/API hosting, HTTPS/Secure-cookie enforcement and startup migrations. Created a separate Neon project/database and limited runtime role; local development databases remain unchanged. Frontend production build and a focused PostgreSQL hosting integration test passed. The test caught an API fallback error caused by Windows path separators; the correction passed. Container/live verification remains pending. Original local Git history stays private; the public source uses noreply-authored commits.
+
 ## Phase 10 — 2026-10-15
 
 Completed the local MVP with opt-in authenticated fictional seeding: 12 leads/two per stage, eight dated tasks and 20 truthful creation entries. Owner locking, session/Origin/CSRF, atomic rollback and refusal of any populated workspace preserve existing work. UI requires consent and exposes the result/dashboard link; no default account/password or destructive reset exists. Added an exercised CSV fixture, final current-state documentation, bilingual portfolio copy, presentation guide and four real fictional-data screenshots.

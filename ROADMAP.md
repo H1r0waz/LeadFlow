@@ -1,6 +1,6 @@
 # LeadFlow roadmap
 
-Phases 0–10 are complete. Authentication, CRM, dashboard and CSV transfer are verified locally through React, API and PostgreSQL. Focused visual, responsive and keyboard review is complete in Chromium. Local regression and dependency review are complete. Safe fictional seeding, a demo guide, final portfolio copy and release evidence are complete. The result is a verified local portfolio MVP; public deployment is not part of this delivery.
+Phases 0–10 are complete. The verified local portfolio MVP is published at https://github.com/H1r0waz/LeadFlow. Phase 11 adds the user-authorized public demonstration on Render Free with an isolated Neon Free database. Live verification is recorded separately from local evidence.
 
 | Phase | Scope | Exit evidence | State |
 | --- | --- | --- | --- |
@@ -15,10 +15,11 @@ Phases 0–10 are complete. Authentication, CRM, dashboard and CSV transfer are 
 | 8 | Visual polish, responsive and accessibility | Browser review at mobile/desktop widths, keyboard navigation and state review | Complete |
 | 9 | Regression, hardening and dependency review | Full relevant tests/lint/build, dependency audit and critical browser flow | Complete |
 | 10 | Fictional seed, demo instructions, portfolio and final report | Repeatable local launch and evidence-based release documentation | Complete |
+| 11 | Public portfolio demo: Render + Neon | HTTPS session/CSRF, SPA routes, database readiness and persistent authenticated CRM flow | In progress |
 
 ## Working strategy
 
-The main branch is the stable integration point. Use one local `phase-N-short-name` branch per implementation phase. The principal integrates stable phase commits. Backend and frontend agents own separate directories; QA reviews implementation and test evidence. Only the principal mutates Git in a shared checkout. Independent read-only reviews may run concurrently. No remote or production deployment is configured.
+The main branch is the stable integration point. Use one local phase branch per implementation phase. The principal integrates stable phase commits. Only the principal mutates Git in a shared checkout. The public repository uses fresh noreply-authored history; original local history is preserved privately. Never push the original local history to the public repository.
 
 ## Definition of done
 
