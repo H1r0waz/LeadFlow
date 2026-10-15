@@ -1,0 +1,5 @@
+Contact,Company,Email,Stage,Value,Source,Notes
+Arlo Fable,Fictional Orchard Studio,arlo.fable@example.org,new,450.00,Website,Fictional CSV contact for demonstration only.
+Bea Moss,Fictional Pebble Collective,bea.moss@example.org,interested,1100.00,Referral,Fictional CSV contact for demonstration only.
+Arlo Duplicate,Fictional Orchard Studio,arlo.fable@example.org,new,450.00,Website,Duplicate email should be skipped.
+Invalid Fictional Contact,Fictional Paper Works,not-an-email,contacted,250.00,Event,Invalid email should be rejected.
