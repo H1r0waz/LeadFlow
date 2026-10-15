@@ -2,6 +2,8 @@
 
 A focused CRM for freelancers and small businesses, built as a **personal portfolio demonstration**. This is not commissioned client work. All included contacts, companies and opportunities are fictional.
 
+**[Open the live demo](https://leadflow-tcdh.onrender.com)** · [Source on GitHub](https://github.com/H1r0waz/LeadFlow). Create your own demo account, then load fictional data from Settings. The free service may take about a minute to wake after inactivity.
+
 The local MVP includes isolated user accounts, lead CRUD/search/filter/sort, a persisted six-stage Kanban, notes, follow-up tasks, activity history, sales metrics/charts and validated CSV import/export. An opt-in fictional demo fills an empty workspace.
 
 ![LeadFlow dashboard with fictional demo data](docs/images/dashboard.png)
@@ -45,7 +47,7 @@ The database helper initializes only ignored .local/postgres at 127.0.0.1:55433,
 
 API: http://127.0.0.1:8000, OpenAPI /docs, liveness /health, database readiness /api/v1/health. Vite proxies /api while preserving Origin. Tests intentionally reset only the exact guarded loopback leadflow_test database.
 
-Public demo deployment is being prepared on Render Free with a separate Neon Free PostgreSQL database. See [deployment instructions and live evidence](docs/DEPLOYMENT.md). Local HTTP cookies remain development-only; the hosted entry point requires HTTPS and Secure cookies. See [SECURITY.md](SECURITY.md).
+The public demo runs on Render Free with a separate Neon Free PostgreSQL database. See [deployment instructions and live evidence](docs/DEPLOYMENT.md). Local HTTP cookies remain development-only; the hosted entry point requires HTTPS and Secure cookies. See [SECURITY.md](SECURITY.md).
 
 ## Product behavior
 

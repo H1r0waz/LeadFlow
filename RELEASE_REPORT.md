@@ -1,8 +1,8 @@
 # Release report
 
-## Phase 11 — Public deployment in progress
+## Phase 11 — Public portfolio demo verified (2026-10-15)
 
-User-authorized Render Free + Neon Free deployment adds a Docker build, same-origin SPA/API hosting, HTTPS/Secure-cookie enforcement and startup Alembic migrations with a separate limited runtime database role. The isolated Neon schema is migrated. The focused PostgreSQL hosting test and frontend production build passed; Ruff passed. An initial Windows path-separator regression in API fallback was caught by the new test and corrected. Container build and live authenticated verification are pending. See docs/DEPLOYMENT.md.
+Live URL: https://leadflow-tcdh.onrender.com. User-authorized Render Free + Neon Free deployment adds a Docker build, same-origin SPA/API hosting, HTTPS/Secure-cookie enforcement and startup Alembic migrations with a separate limited runtime database role. Four focused local PostgreSQL hosting tests, frontend production build and Ruff passed. An initial Windows path-separator regression in API fallback was caught by the new test and corrected. Render built the container and reported it live. Thirty real HTTPS/API checks passed, including sessions/CSRF, persistent CRM/tasks, CSV and two-owner isolation. Chromium login/dashboard/reload also passed; a Render error-level log query was empty. The existing full local suites were not rerun for the deployment wrapper. This is a fictional-data public demo with free-plan cold starts and quotas, not a production CRM availability claim. See docs/DEPLOYMENT.md for source/deploy identifiers and untested operational limits.
 
 ## Final local MVP — Phase 10
 

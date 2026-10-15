@@ -15,7 +15,7 @@ Phases 0–10 are complete. The verified local portfolio MVP is published at htt
 | 8 | Visual polish, responsive and accessibility | Browser review at mobile/desktop widths, keyboard navigation and state review | Complete |
 | 9 | Regression, hardening and dependency review | Full relevant tests/lint/build, dependency audit and critical browser flow | Complete |
 | 10 | Fictional seed, demo instructions, portfolio and final report | Repeatable local launch and evidence-based release documentation | Complete |
-| 11 | Public portfolio demo: Render + Neon | HTTPS session/CSRF, SPA routes, database readiness and persistent authenticated CRM flow | In progress |
+| 11 | Public portfolio demo: Render + Neon | Four local hosting tests; container live; 30 public checks; browser login/dashboard/reload | Complete |
 
 ## Working strategy
 

@@ -1,8 +1,8 @@
 # Phase log
 
-## Phase 11 — Public deployment (in progress, 2026-10-15)
+## Phase 11 — Public deployment complete (2026-10-15)
 
-The user authorized Render Free, Neon Free, the Render workspace and secret database configuration. Added Docker packaging, same-origin SPA/API hosting, HTTPS/Secure-cookie enforcement and startup migrations. Created a separate Neon project/database and limited runtime role; local development databases remain unchanged. Frontend production build and a focused PostgreSQL hosting integration test passed. The test caught an API fallback error caused by Windows path separators; the correction passed. Container/live verification remains pending. Original local Git history stays private; the public source uses noreply-authored commits.
+The user authorized Render Free, Neon Free, the Render workspace and secret database configuration. Added Docker packaging, same-origin SPA/API hosting, HTTPS/Secure-cookie enforcement and startup migrations. Created a separate Neon project/database and limited runtime role; local development databases remain unchanged. Frontend production build, four focused hosting tests and Ruff passed. The test caught an API fallback error caused by Windows path separators; the correction passed. Render built the container and reported it live at https://leadflow-tcdh.onrender.com. Thirty live HTTPS/API checks and Chromium login/dashboard/reload passed. No error-level Render logs were returned. Full earlier suites, load/uptime, cold-start and restore drills were not rerun/performed. Original local Git history stays private; the public source uses noreply-authored commits. See DEPLOYMENT.md for evidence and free-plan limits.
 
 ## Phase 10 — 2026-10-15
 
